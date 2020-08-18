@@ -23,9 +23,11 @@ We cleaned and preprocessed the data to our needs, to label the dataset we used 
 ## System design
 Our system conists of two parts - (i) Online processing and (ii) Offline processing. During the offline processing the the model is trained using the proposed model and we use dynamic quantization to reduce the size of the model and latency. The online processing is the frontend which accepts the input text and punctuates accordingly. We also built an annotation system that accepts additional data that we retrain later
 The frontend system is described as shown below:
+
+
 ![frontend_design](https://github.com/VarnithChordia/Multlingual_Punctuation_restoration/blob/master/Front_end.png)
 
-In the frontend we passed German text and this returned the punctuated stream of text.
+**In the frontend we passed German text and this returned the punctuated stream of text.**
 
 
 The  entire system can be understood as below:
