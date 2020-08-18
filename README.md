@@ -13,9 +13,9 @@ Adding the auxilliary classifers improves the performance of the system by align
 ## Dataset
 For this system demonstration we considered two datasets:
 
-1.![EUROPARL Dataset](https://www.statmt.org/europarl/) - Consisted of spoken dialog in multiple language (translated and non translated) from members of European union parliament in varying chronology.
+1.[EUROPARL Dataset!](https://www.statmt.org/europarl/) - Consisted of spoken dialog in multiple language (translated and non translated) from members of European union parliament in varying chronology.
 
-2.![Webhose](https://webhose.io/?utm_medium=CPC&utm_source=Google&utm_campaign=1200517_WD-Brand-campaign-global&gclid=CjwKCAjw1ej5BRBhEiwAfHyh1Oo_F73bFNOihGRVFEw0dzwyfxqWhZoj5Vw4kjlbFN3GX2-YVcBmiBoC-vkQAvD_BwE) - Consists of the news articles from top sources in every language.
+2.[Webhose!](https://webhose.io/?utm_medium=CPC&utm_source=Google&utm_campaign=1200517_WD-Brand-campaign-global&gclid=CjwKCAjw1ej5BRBhEiwAfHyh1Oo_F73bFNOihGRVFEw0dzwyfxqWhZoj5Vw4kjlbFN3GX2-YVcBmiBoC-vkQAvD_BwE) - Consists of the news articles from top sources in every language.
 
 We cleaned and preprocessed the data to our needs, to label the dataset we used custom tokenizers  to avoid abbreviations,accentmarkers, etc.  We labeled every word in the sequence according to the punctuation following it. We achieved this by converting it into a set of pairs of (token, punctuation) where punctuation is the null punctuation, if there is no punctuation mark following in the text.
 
