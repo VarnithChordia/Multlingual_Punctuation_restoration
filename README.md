@@ -1,7 +1,7 @@
 # Multilingual Punctuation Restoration
 
 
-This is the repository of the work done for multilingual punctuation restoration for [EACL system demonstration](https://2021.eacl.org/calls/demos/). Our demonstrated system can restore punctuations - period(.), comma(,),exclamation(!) and question mark(?) - for three languages - English, French and German. The models can be available on request.
+This is the repository of the work done for multilingual punctuation restoration for [EACL system demonstration](https://2021.eacl.org/calls/demos/). Our demonstrated system can restore punctuations - period(.), comma(,),exclamation(!) and question mark(?) - for five languages - High Resource(English, French and German) and Low Resource Languages(Hindi and Tamil). The models can be available on request.
 
 ## Architecture
 The underlying language model consists of  (i) M-BERT (ii) BILSTM (iii) CRF - Conditonal Random Field. This language model is jointly trained with language classifier and text mode classifier - 'Written' & 'Spoken'. The architecture can be understood from the diagram below:
