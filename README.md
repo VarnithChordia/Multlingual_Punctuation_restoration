@@ -6,7 +6,7 @@ This is the repository of the work done for multilingual punctuation restoration
 ## Architecture
 The underlying language model consists of  (i) M-BERT (ii) BILSTM (iii) CRF - Conditonal Random Field. This language model is jointly trained with language classifier and text mode classifier - 'Written' & 'Spoken'. The architecture can be understood from the diagram below:
 
-![BERT_ARCHITECTURE](https://github.com/VarnithChordia/Multlingual_Punctuation_restoration/blob/master/BERTBILSTMCRFJOINT_6.png)
+![BERT_ARCHITECTURE](https://github.com/VarnithChordia/Multlingual_Punctuation_restoration/blob/master/PR_architecture.png)
 
 Adding the auxilliary classifers improves the performance of the system by aligning the weights better for the type of input text and language. 
 
