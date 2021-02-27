@@ -30,9 +30,5 @@ The frontend system is described as shown below:
 **In the frontend we passed German text and this returned the punctuated stream of text.** T
 
 
-The  entire system can be understood as below:
-![System_design](https://github.com/VarnithChordia/Multlingual_Punctuation_restoration/blob/master/SYSTEM_DESIGN_2.png)
-
-
 
 
