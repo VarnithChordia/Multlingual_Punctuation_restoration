@@ -20,14 +20,6 @@ For this system demonstration we considered two datasets:
 We cleaned and preprocessed the data to our needs, to label the dataset we used custom tokenizers  to avoid abbreviations,accentmarkers, etc.  We labeled every word in the sequence according to the punctuation following it. We achieved this by converting it into a set of pairs of (token, punctuation) where punctuation is the null punctuation, if there is no punctuation mark following in the text.
 
 
-## System design
-Our system conists of two parts - (i) Online processing and (ii) Offline processing. During the offline processing the the model is trained using the proposed model and we use dynamic quantization to reduce the size of the model and latency. The online processing is for interactive use, where users can pass text for restoring punctuation or can pass new language data that can be used to fine tune or retrain the punctuation restoration language model. Our web interface consists of two tabs - Punctuate and Annotate. Text entered by the user under the input section is passed through prepossessing module which strips punctuation that we intend to replace and performs appropriate tokenization to pass the input text to the trained model. Under the annotate tab a user can upload a text file or enter text manually of a given language and select the text mode from a drop-down
-
-The frontend system is described as shown below:
-
-![frontend_design](https://github.com/VarnithChordia/Multlingual_Punctuation_restoration/blob/master/Front_end.png)
-
-**In the frontend we passed German text and this returned the punctuated stream of text.** T
 
 
 
