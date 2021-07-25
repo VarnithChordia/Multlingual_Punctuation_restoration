@@ -1,7 +1,7 @@
 # Multilingual Punctuation Restoration
 
 
-This is the repository of the work done for multilingual punctuation restoration for [EACL system demonstration](https://2021.eacl.org/calls/demos/), the link to the paper is available at 
+This is the repository of the work done for multilingual punctuation restoration at EACL, the link to the paper is available at - ![Paper Link]https://aclanthology.org/2021.eacl-demos.37/
 . Our demonstrated system can restore punctuations - period(.), comma(,),exclamation(!) and question mark(?) - for five languages - High Resource(English, French and German) and Low Resource Languages(Hindi and Tamil). The models can be available on request.
 
 ## Architecture
