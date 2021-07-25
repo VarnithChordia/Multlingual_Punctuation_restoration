@@ -32,6 +32,49 @@ An example of the preprocessed data is as seen below:
 ![BERT_ARCHITECTURE](https://github.com/VarnithChordia/Multlingual_Punctuation_restoration/blob/master/preprocessed_data_.png)
 
 
+## Train & Inference
+
+To train the model on a dataset run - 
+
+```
+python3 train_model.py
+```
+
+The arguments for trianing can be altered in the code, with the documentation provided
+
+To predict, prepare a test dataset similar to the train and run the following -
+
+```
+python3 predict_model.py
+```
+
+
+
+
+## Model availability
+
+The models are available here can can be available on request - https://drive.google.com/drive/folders/1aJYlpjgmiP9ikZLKHi4uOL7Wen92rPBT?usp=sharing
+
+
+## Citation
+
+```
+
+@inproceedings{chordia-2021-punktuator,
+    title = "{P}un{K}tuator: A Multilingual Punctuation Restoration System for Spoken and Written Text",
+    author = "Chordia, Varnith",
+    booktitle = "Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: System Demonstrations",
+    month = apr,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.eacl-demos.37",
+    pages = "312--320",
+    abstract = "Text transcripts without punctuation or sentence boundaries are hard to comprehend for both humans and machines. Punctuation marks play a vital role by providing meaning to the sentence and incorrect use or placement of punctuation marks can often alter it. This can impact downstream tasks such as language translation and understanding, pronoun resolution, text summarization, etc. for humans and machines. An automated punctuation restoration (APR) system with minimal human intervention can improve comprehension of text and help users write better. In this paper we describe a multitask modeling approach as a system to restore punctuation in multiple high resource {--} Germanic (English and German), Romanic (French){--} and low resource languages {--} Indo-Aryan (Hindi) Dravidian (Tamil) {--} that does not require extensive knowledge of grammar or syntax of a given language for both spoken and written form of text. For German language and the given Indic based languages this is the first towards restoring punctuation and can serve as a baseline for future work.",
+}
+
+```
+
 
 
 
