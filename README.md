@@ -53,7 +53,7 @@ python3 predict_model.py
 
 ## Model availability
 
-The models are available here can can be available on request - https://drive.google.com/drive/folders/1aJYlpjgmiP9ikZLKHi4uOL7Wen92rPBT?usp=sharing
+The models are available here can be made available on request - https://drive.google.com/drive/folders/1aJYlpjgmiP9ikZLKHi4uOL7Wen92rPBT?usp=sharing
 
 
 ## Citation
