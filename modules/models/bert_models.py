@@ -4,7 +4,7 @@ from modules.layers.layers import BiLSTM, MultiHeadAttention
 import abc
 
 
-class BERTNerModel(nn.Module, metaclass=abc.ABCMeta):
+class BERTPunctModel(nn.Module, metaclass=abc.ABCMeta):
     """Base class for all BERT Models"""
 
     @abc.abstractmethod
@@ -69,7 +69,7 @@ class BERTBiLSTMCRF(BERTNerModel):
         return cls(embeddings, lstm, crf, device)
 
 
-class BERTBiLSTMNCRF(BERTNerModel):
+class BERTBiLSTMNCRF(BERTPunctModel):
 
     def __init__(self, embeddings, lstm, crf, device="cuda"):
         super(BERTBiLSTMNCRF, self).__init__()
@@ -109,7 +109,7 @@ class BERTBiLSTMNCRF(BERTNerModel):
         return cls(embeddings, lstm, crf, device)
 
 
-class BERTAttnCRF(BERTNerModel):
+class BERTAttnCRF(BERTPunctModel):
 
     def __init__(self, embeddings, attn, crf, device="cuda"):
         super(BERTAttnCRF, self).__init__()
@@ -148,7 +148,7 @@ class BERTAttnCRF(BERTNerModel):
         return cls(embeddings, attn, crf, device)
 
 
-class BERTAttnNCRF(BERTNerModel):
+class BERTAttnNCRF(BERTPunctModel):
 
     def __init__(self, embeddings, attn, crf, device="cuda"):
         super(BERTAttnNCRF, self).__init__()
@@ -187,7 +187,7 @@ class BERTAttnNCRF(BERTNerModel):
         return cls(embeddings, attn, crf, device)
 
 
-class BERTBiLSTMAttnCRF(BERTNerModel):
+class BERTBiLSTMAttnCRF(BERTPunctModel):
 
     def __init__(self, embeddings, lstm, attn, crf, device="cuda"):
         super(BERTBiLSTMAttnCRF, self).__init__()
@@ -233,7 +233,7 @@ class BERTBiLSTMAttnCRF(BERTNerModel):
         return cls(embeddings, lstm, attn, crf, device)
 
 
-class BERTBiLSTMAttnNCRF(BERTNerModel):
+class BERTBiLSTMAttnNCRF(BERTPunctModel):
 
     def __init__(self, embeddings, lstm, attn, crf, device="cuda"):
         super(BERTBiLSTMAttnNCRF, self).__init__()
@@ -279,7 +279,7 @@ class BERTBiLSTMAttnNCRF(BERTNerModel):
         return cls(embeddings, lstm, attn, crf, device)
 
 
-class BERTBiLSTMAttnNCRFJoint(BERTNerModel):
+class BERTBiLSTMAttnNCRFJoint(BERTPunctModel):
 
     def __init__(self, embeddings, lstm, attn, crf, clf, mode, device="cuda"):
         super(BERTBiLSTMAttnNCRFJoint, self).__init__()
@@ -331,7 +331,7 @@ class BERTBiLSTMAttnNCRFJoint(BERTNerModel):
         return cls(embeddings, lstm, attn, crf, clf, mode_tr, device)
 
 
-class BERTBiLSTMAttnCRFJoint(BERTNerModel):
+class BERTBiLSTMAttnCRFJoint(BERTPunctModel):
 
     def __init__(self, embeddings, lstm, attn, crf, clf,mode, device="cuda"):
         super(BERTBiLSTMAttnCRFJoint, self).__init__()
@@ -383,7 +383,7 @@ class BERTBiLSTMAttnCRFJoint(BERTNerModel):
         return cls(embeddings, lstm, attn, crf, clf,mode_tr, device)
 
 
-class BERTBiLSTMCRFJoint(BERTNerModel):
+class BERTBiLSTMCRFJoint(BERTPunctModel):
 
     def __init__(self, embeddings, lstm, crf, clf,mode, device="cuda"):
         super(BERTBiLSTMCRFJoint, self).__init__()
@@ -428,7 +428,7 @@ class BERTBiLSTMCRFJoint(BERTNerModel):
         return cls(embeddings, lstm, crf, clf,mode_tr, device)
 
 
-class BERTBiLSTMNCRFJoint(BERTNerModel):
+class BERTBiLSTMNCRFJoint(BERTPunctModel):
 
     def __init__(self, embeddings, lstm, crf, clf,mode, device="cuda"):
         super(BERTBiLSTMNCRFJoint, self).__init__()
@@ -473,7 +473,7 @@ class BERTBiLSTMNCRFJoint(BERTNerModel):
         return cls(embeddings, lstm, crf, clf, mode_tr, device)
 
 
-class BERTAttnCRFJoint(BERTNerModel):
+class BERTAttnCRFJoint(BERTPunctModel):
 
     def __init__(self, embeddings, attn, crf, clf, mode, device="cuda"):
         super(BERTAttnCRFJoint, self).__init__()
@@ -520,7 +520,7 @@ class BERTAttnCRFJoint(BERTNerModel):
         return cls(embeddings, attn, crf, clf, mode_tr, device)
 
 
-class BERTAttnNCRFJoint(BERTNerModel):
+class BERTAttnNCRFJoint(BERTPunctModel):
 
     def __init__(self, embeddings, attn, crf, clf, mode, device="cuda"):
         super(BERTAttnNCRFJoint, self).__init__()
@@ -567,7 +567,7 @@ class BERTAttnNCRFJoint(BERTNerModel):
         return cls(embeddings, attn, crf, clf, mode_tr, device)
 
 
-class BERTNCRF(BERTNerModel):
+class BERTNCRF(BERTPunctModel):
 
     def __init__(self, embeddings, crf, device="cuda"):
         super(BERTNCRF, self).__init__()
@@ -601,7 +601,7 @@ class BERTNCRF(BERTNerModel):
         return cls(embeddings, crf, device)
 
 
-class BERTCRF(BERTNerModel):
+class BERTCRF(BERTPunctModel):
 
     def __init__(self, embeddings, crf, device="cuda"):
         super(BERTCRF, self).__init__()
