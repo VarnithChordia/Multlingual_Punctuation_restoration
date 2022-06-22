@@ -58,7 +58,7 @@ mosestokenizer==1.0.0
 murmurhash==1.0.2
 networkx==2.4
 nltk==3.5
-numpy==1.19.2
+numpy==1.22.0
 oauthlib==3.1.0
 openfile==0.0.7
 overrides==1.9
